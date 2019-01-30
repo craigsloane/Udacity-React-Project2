@@ -1,0 +1,312 @@
+/*
+ bac
+*/
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #abe1fd;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+}
+
+ul{
+  list-style: none;
+  padding: 0px;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+#dashboard.showAnswered .answered{
+  display: flex;
+}
+
+#dashboard.showAnswered .unanswered{
+  display: none;
+}
+
+#dashboard.showUnanswered .answered{
+  display: none;
+}
+
+#dashboard.showUnanswered .unanswered{
+  display: flex;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col{
+  flex-direction: column;
+}
+
+.row{
+  flex-direction: row;
+}
+
+.navbar{
+  margin-bottom: 30px;
+  padding: 10px 0px;
+  border-bottom: 10px solid #bfb1d5;
+
+}
+
+#dashboard .navbar{
+  margin-bottom: 0px;
+}
+
+.navbar, .ques-btn-container{
+  width : 100%;
+  height: auto;
+  background: /*#bfb1d5;*/ #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn{
+  background: #bfb1d5;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid black;
+  transition: all 400ms;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+
+}
+.btn:hover{
+  background: #fed1be;
+
+}
+
+.btn-ans{
+  background: #adddcf;
+  width: 50%;
+  margin: 0;
+  border-radius: 0px;
+  padding: 10px 20px;
+  cursor: pointer;
+
+}
+
+.btn-unans{
+  background: #f0e0a2;
+  width: 50%;
+  margin: 0;
+  border-radius: 0px;
+  padding: 10px 20px;
+  cursor: pointer;
+
+}
+
+.user-profile{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+ .user{
+  margin: 0px auto;
+  margin-bottom: 20px;
+  height: 150px;
+  width: 150px;
+  background: #fff;
+  border-radius: 50%;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.user img {
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+
+.user p {
+  text-align: center;
+}
+
+#dashboard .user{
+  pointer-events: none;
+
+}
+
+.ques,.add, .tile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  width: 300px;
+  background: #fff;
+  margin: 20px;
+  padding: 20px;
+  cursor: pointer;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+}
+.add, .tile{
+  cursor: default;
+}
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+#dashboard .main{
+  min-height: 90vh;
+}
+
+#dashboard.showAnswered .main{
+  background: #adddcf;
+}
+
+#dashboard.showUnanswered .main{
+  background: #f0e0a2;
+}
+
+#dashboard.showAnswered .btn-ans{
+  border-top: 1px solid #adddcf;
+  border-right: 1px solid black;
+  border-bottom: 1px solid #adddcf;
+}
+
+#dashboard.showUnanswered .btn-unans{
+  border-top: 1px solid #f0e0a2;
+  border-left: 1px solid black;
+  border-bottom: 1px solid #f0e0a2;
+}
+#dashboard.showAnswered .btn-unans{
+  border-top: 1px solid #f0e0a2;
+  border-right: 1px solid #f0e0a2;
+  border-bottom: 1px solid black;
+}
+
+#dashboard.showUnanswered .btn-ans{
+  border-top: 1px solid #adddcf;
+  border-left: 1px solid #adddcf;
+  border-bottom: 1px solid black;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+  background: #fff;
+  transition: all 0.2s;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.cursor-pointer:hover{
+  cursor: pointer;
+  background: #adddcf;
+}
+
+.user-choice{
+  background: #adddcf;
+  border-radius: 20px;
+}
+
+.option{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 680px) {
+    .navbar {
+      flex-direction: column;
+    }
+}
+
+.navUser{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 5px 0px;
+}
+
+.navUser p{
+ margin: 5px;
+}
+
+.navUser img{
+
+}
+
+.stat-bar{
+  width:80%;
+  background: #e8e7e5;
+  margin-bottom: 20px;
+  border: 1px solid #313131;
+}
+.stat-bar-res{
+  height: 30px;
+  width: 60%;
+  background: #bfb1d5;
+}
+
+.position{
+  padding: 10px;
+  border: 1px solid #313131;
+  background: #bfb1d5;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+
+}
+
+.user-choice img{
+  margin-bottom: 15px;
+}
+
+
+button.btn{
+  margin-top: 25px;
+  font-size: 16px;
+}
+
+#dashboard .ques,
+.btn,
+.user{
+  transition: all 400ms;
+}
+
+#dashboard .ques:hover,
+.btn:hover,
+.user:hover{
+  transform: scale(1.05);
+}
+
+.pageNotFound{
+  height : 100vh;
+}
+
+button:disabled{
+  background: #e8e7e5;
+}
+
+form{
+  width: 90%;
+}
